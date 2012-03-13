@@ -4,7 +4,19 @@ gem 'rails', '3.2.2'
 gem 'mongo_mapper'
 gem 'bson_ext'
 
-gem 'rspec-rails', :group => [:test, :development]
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'spork'
+  gem 'autotest'
+  gem 'autotest-rails-pure'
+  gem 'autotest-fsevent'
+  gem 'autotest-growl'
+  gem 'database_cleaner'
+end
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
