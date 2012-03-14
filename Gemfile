@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.2'
 gem 'mongo_mapper'
 gem 'bson_ext'
+gem 'nifty-generators', :group => :development
 
 group :development, :test do
   gem 'rspec-rails'
@@ -51,3 +52,5 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem "mocha", :group => :test

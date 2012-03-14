@@ -1,0 +1,11 @@
+<% title "Moderated Comment" %>
+
+<p>
+  <strong>Text:</strong>
+  <%= @comment.text %>
+</p>
+
+<p>
+  <%= link_to "Destroy", @comment, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", comments_path %>
+</p>

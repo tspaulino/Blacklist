@@ -1,0 +1,8 @@
+<%= form_for @keyword do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :word %><br />
+    <%= f.text_field :word %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

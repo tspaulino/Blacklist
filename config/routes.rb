@@ -1,4 +1,10 @@
 Blacklist::Application.routes.draw do
+  resources :comments do
+    get 'moderate', :on => :member
+  end
+
+  resources :keywords
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
