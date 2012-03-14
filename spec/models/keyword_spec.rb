@@ -48,7 +48,7 @@ describe Keyword do
       @moderated_comment.text.match(/\b(comment)\b/i).should be_nil
       @moderated_comment.text.match(/(xxxx)/).should_not be_nil
       @moderated_comment.text.match(/(commentable)/i).should_not be_nil
-
     end
   end
+
 end
